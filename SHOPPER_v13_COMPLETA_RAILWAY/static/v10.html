@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#173f36"><meta name="description" content="SHOPPER: descubre productos reales, crea listas prácticas y compra mejor con tu gente.">
+<link rel="icon" type="image/svg+xml" href="/static/icon.svg">
+<link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+<link rel="manifest" href="/static/manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="SHOPPER">
+<title>SHOPPER · Compra mejor</title><link rel="stylesheet" href="/static/v10.css">
+<script src="/static/v10.js" defer></script>
+</head><body>
+<div id="notice" role="status" aria-live="polite"></div>
+<div class="layout">
+  <aside class="side" aria-label="Navegación principal">
+    <a href="/" class="brand"><span class="brand-mark">s<span class="brand-seed">•</span></span><span>shopper<small>BETA PRIVADA</small></span></a>
+    <div class="nav-section">TU COMPRA</div>
+    <nav id="sideNav">
+      <button type="button" data-view="discover" class="navbtn selected"><span class="navico">⌂</span> Descubrir</button>
+      <button type="button" data-view="baskets" class="navbtn"><span class="navico">▤</span> Mis cestas <span id="basketCountBadge" class="nav-count"></span></button>
+      <button type="button" data-view="shops" class="navbtn"><span class="navico">⌖</span> Supermercados</button>
+      <button type="button" data-view="circle" class="navbtn"><span class="navico">♡</span> Mi círculo</button>
+      <button type="button" data-view="food" class="navbtn"><span class="navico">▦</span> Foodpedia</button>
+    </nav>
+    <div class="side-divider"></div>
+    <div class="nav-section">LO QUE IMPORTA</div>
+    <div class="mini-note"><span class="note-icon">✳</span><strong>Compra con cabeza.</strong><p>Consulta fichas reales, evita comprar duplicados y prepara listas con quien quieras.</p></div>
+    <div class="side-bottom"><button id="profileSide" class="account-pill"><span class="avatar">S</span><span id="sideUserText">Mi cuenta<small>Entrar / registrarme</small></span><span>›</span></button><a class="legacy-link" href="/classic">Funciones avanzadas y datos anteriores ↗</a></div>
+  </aside>
+  <div class="main-wrap">
+    <header class="topbar">
+      <div class="mobile-logo"><span class="brand-mark">s<span class="brand-seed">•</span></span><strong>shopper</strong></div>
+      <div class="location-pill" id="locationPill">⌖ <span>Madrid · Zona piloto</span> <span class="down">⌄</span></div>
+      <div class="top-actions"><span class="privacy-label">● <span id="sessionStatus">Exploración libre</span></span><button id="userTop" type="button" class="user-top" aria-label="Mi cuenta">☺</button></div>
+    </header>
+    <main id="app" class="main" tabindex="-1"><div class="loading-screen"><span class="loader"></span><p>Cargando SHOPPER…</p></div></main>
+    <footer class="web-footer">SHOPPER · Beta experimental · Los precios web no garantizan existencias ni precios en tienda física · <a href="https://world.openfoodfacts.org" target="_blank" rel="noopener noreferrer">Open Food Facts</a> (ODbL)</footer>
+  </div>
+</div>
+<nav class="mobile-nav" aria-label="Navegación móvil">
+ <button data-view="discover"><span>⌂</span>Explorar</button>
+ <button data-view="baskets"><span>▤</span>Cestas</button>
+ <button data-view="shops"><span>⌖</span>Tiendas</button>
+ <button data-view="circle"><span>♡</span>Círculo</button>
+ <button data-view="account"><span>☰</span>Más</button>
+</nav>
+<div id="modalBackdrop" class="modal-backdrop hidden" role="presentation"><div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="SHOPPER"><button id="modalClose" type="button" class="modal-close" aria-label="Cerrar">×</button><div id="modalContent"></div></div></div>
+</body></html>

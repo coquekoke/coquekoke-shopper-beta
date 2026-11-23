@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#193e34"><meta name="description" content="SHOPPER, tu biblioteca de cestas y supermercados locales. Compras mejor, con tu gente.">
+<link rel="icon" href="/static/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+<link rel="manifest" href="/static/manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="SHOPPER">
+<title>SHOPPER · Tu compra, a tu manera</title><link rel="stylesheet" href="/static/v11.css"><script src="/static/v11.js" defer></script></head>
+<body>
+<div class="shell"><aside class="rail">
+ <a class="logo" href="/" aria-label="SHOPPER Inicio"><span class="logo-mark">s<span>✳</span></span><span class="logo-copy">shopper<small>MI MUNDO DE COMPRAS</small></span></a>
+ <div class="nav-label">EXPLORAR</div>
+ <nav class="nav" aria-label="Navegación principal">
+  <button data-nav="home"><span class="nav-ico">⌂</span> Para ti</button>
+  <button data-nav="library"><span class="nav-ico">▦</span> Mi biblioteca</button>
+  <button data-nav="catalog"><span class="nav-ico">⌕</span> Productos</button>
+  <button data-nav="places"><span class="nav-ico">⌖</span> Mis lugares</button>
+ </nav>
+ <div class="nav-label mt">COMPRAR MEJOR</div><nav class="nav">
+  <button data-nav="pantry"><span class="nav-ico">◉</span> Despensa</button>
+  <button data-nav="circle"><span class="nav-ico">♡</span> Mi círculo</button>
+  <button data-nav="account"><span class="nav-ico">☰</span> Mi cuenta</button>
+ </nav>
+ <div class="rail-bottom"><div class="rail-note"><span>✺</span><strong>Una compra que se adapta a tu vida.</strong><p>Cestas preparadas, tiendas cercanas y ayuda de tu gente.</p></div><a class="old-link" href="/previous">SHOPPER 10 anterior ↗</a><a class="old-link" href="/classic">Herramientas avanzadas ↗</a></div>
+</aside>
+<div class="workarea"><header class="topbar"><div class="brand-mobile"><span class="logo-mark">s<span>✳</span></span>shopper</div>
+<button class="place-switch" id="placeSwitch" aria-label="Seleccionar lugar">⌖ <span id="currentPlaceName">Todos mis lugares</span> <span class="chev">⌄</span></button>
+<div class="top-right"><span id="connectIndicator" class="connection-pill">● Beta privada</span><button id="accountButton" class="account-icon" aria-label="Mi cuenta">☺</button></div></header>
+<main id="main" class="content" tabindex="-1"><div class="page-load">Preparando tu universo SHOPPER…</div></main>
+<footer class="disclaimer-footer">SHOPPER · Prueba privada · Los precios publicados son muestras web fechadas, no descuentos ni inventario en tiempo real · <a href="https://world.openfoodfacts.org/" target="_blank" rel="noopener noreferrer">Open Food Facts</a> (ODbL)</footer></div></div>
+<nav class="mobile-nav" aria-label="Navegación móvil"><button data-nav="home"><span>⌂</span>Inicio</button><button data-nav="library"><span>▦</span>Cestas</button><button data-nav="catalog"><span>⌕</span>Buscar</button><button data-nav="places"><span>⌖</span>Lugares</button><button data-nav="circle"><span>♡</span>Círculo</button></nav>
+<div class="modal-back hidden" id="modalBack"><div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Ventana de SHOPPER"><button id="closeModal" class="close-modal" aria-label="Cerrar">×</button><div id="modalInner"></div></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body></html>
