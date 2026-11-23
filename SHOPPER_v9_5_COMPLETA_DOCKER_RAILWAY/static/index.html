@@ -1,0 +1,48 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#153f35"><meta name="description" content="SHOPPER: cestas compartidas, despensa, precios colaborativos y comercios de confianza. Beta privada.">
+<link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="/static/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="SHOPPER">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" href="/static/style.css"><title>SHOPPER 9.0 · Compra mejor, juntos</title>
+<script src="/static/app.js" defer></script>
+</head><body>
+<div id="toast" role="alert" aria-live="polite"></div><div id="netBanner" class="net-banner hidden" role="status">Sin conexión. Se mostrarán los datos anteriores hasta recuperar Internet.</div>
+<section id="authScreen" class="login-wrap">
+ <div class="login-story"><a class="wordmark" href="/" aria-label="SHOPPER inicio"><span class="brand-logo">S</span>SHOPPER <span class="alpha-tag">9.0</span></a>
+  <div class="login-copy"><span class="kicker light">TU VIDA, MEJOR ORGANIZADA</span><h1>Compra mejor.<br><em>Juntos.</em></h1>
+   <p>Organiza la compra con tu familia. Una cesta, distintas personas, menos recados y menos desperdicio.</p>
+   <div class="login-benefits"><span>✦ Ahorra tiempo</span><span>✦ Controla el gasto</span><span>✦ Reduce desperdicio</span></div></div>
+  <p class="small-muted">BETA FAMILIAR · Sin pagos, reservas de tiendas ni encargos profesionales. La conexión privada requiere un servidor activo.</p></div>
+ <div class="login-panel"><div class="login-form-wrap"><div class="eyebrow">BIENVENIDO A SHOPPER</div><h2>Tu cuenta, todas tus posibilidades.</h2><p class="muted">Entra a tu espacio privado y comparte con personas invitadas.</p>
+  <div class="segmented"><button id="showLogin" class="active" type="button">Entrar</button><button id="showRegister" type="button">Crear cuenta</button></div>
+  <form id="loginForm" class="field-stack"><label>Usuario<input name="username" autocomplete="username" required placeholder="Tu usuario"></label>
+    <label>Contraseña<input name="password" type="password" autocomplete="current-password" required placeholder="Tu contraseña"></label><button class="primary-btn" type="submit">Entrar a SHOPPER <span>↗</span></button></form>
+  <form id="registerForm" class="field-stack hidden"><label>Usuario (3–24 caracteres)<input name="username" minlength="3" maxlength="24" pattern="[a-zA-Z0-9._-]+" required placeholder="tu_usuario"></label>
+   <label>Nombre visible<input name="display_name" minlength="2" maxlength="60" required placeholder="Cómo te llamamos"></label>
+   <label>Contraseña (mínimo 12 caracteres)<input name="password" type="password" minlength="12" maxlength="128" required autocomplete="new-password" placeholder="Crea una contraseña"></label>
+   <label id="signupCodeWrap" class="hidden">Código privado de alta<input name="signup_code" autocomplete="off" placeholder="Código que te facilita el fundador"></label>
+   <button class="primary-btn" type="submit">Crear mi cuenta <span>↗</span></button></form>
+  <div class="login-divider hidden">o prueba con una identidad ficticia</div>
+  <div class="demo-accounts hidden"><button type="button" data-demo="maria_demo">👩‍🦰 María · demo</button><button type="button" data-demo="lucas_demo">👨 Lucas · demo</button></div>
+  <p class="footnote demo-footnote hidden">Modo laboratorio: ambas cuentas usan <code>ShopperDemo2026!</code>. No introduzcas información personal real; el almacenamiento es local y no está auditado para producción.</p>
+ </div></div>
+</section>
+<div id="appShell" class="shell hidden">
+ <aside class="sidebar"><div class="logo-line"><span class="brand-logo">S</span><div><strong>SHOPPER</strong><span>YOUR EVERYDAY, BETTER</span></div></div>
+ <div class="nav-group-name">TU ESPACIO</div><nav id="desktopNav" aria-label="Secciones de la aplicación">
+ <button data-nav="home" class="active"><span>⌂</span> Mi día</button><button data-nav="baskets"><span>▤</span> Mis cestas</button><button data-nav="circle"><span>♡</span> Mi círculo</button>
+ <button data-nav="pantry"><span>◷</span> Despensa</button><button data-nav="catalog"><span>▦</span> Productos</button>
+ <button data-nav="stores"><span>⌖</span> Mis supermercados</button><button data-nav="live"><span>◉</span> SHOPPER Live</button>
+ <button data-nav="community"><span>✳</span> Foodpedia & opiniones</button><button data-nav="watch"><span>↘</span> Mis seguimientos</button><button data-nav="history"><span>◫</span> Mis compras reales</button><button data-nav="orders"><span>◫</span> Encargos</button>
+ <button data-nav="shopper"><span>♢</span> Ser shopper</button><button data-nav="business"><span>↗</span> Rentabilidad</button></nav>
+ <div class="sidebar-bottom"><span class="status-light"></span> Círculo privado<p>Datos observados ≠ precios garantizados</p><button data-nav="account">Ajustes y datos →</button></div>
+ </aside>
+ <div class="app-area"><header class="topbar"><div class="top-left"><span class="mobile-brand">SHOPPER</span><span id="breadcrumb">MI DÍA <small>/ ALFA LOCAL</small></span></div>
+ <div class="top-right"><span class="pill amber">BETA PRIVADA · SIN PAGOS</span><button id="userPill" data-nav="account" class="userpill"><span class="avatar">S</span><span>Cuenta</span></button></div></header>
+ <main id="content" tabindex="-1"></main>
+ <footer class="footer">SHOPPER 9.0 · Cestas y recados entre personas de confianza · Aportaciones comerciales no verificadas · No se envían pedidos a tiendas</footer></div>
+ <nav class="bottom-nav" aria-label="Menú móvil"><button data-nav="home"><span>⌂</span>Inicio</button><button data-nav="baskets"><span>▤</span>Cestas</button><button data-nav="circle"><span>♡</span>Círculo</button><button data-nav="pantry"><span>◷</span>Despensa</button><button data-nav="stores"><span>⌖</span>Tiendas</button><button data-nav="account"><span>☰</span>Más</button></nav>
+</div></body></html>
